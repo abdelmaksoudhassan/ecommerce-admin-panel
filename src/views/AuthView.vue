@@ -8,8 +8,8 @@
             </InputField>
             <Alert :show="!!errMsg">{{ errMsg }}</Alert>
             <el-form-item>
-                <el-button type="primary" @click="submitForm" :loading="loading">Login</el-button>
-                <el-button type="danger" @click="resetForm" >Reset</el-button>
+                <el-button class="btn" type="primary" @click="submitForm" :loading="loading">Login</el-button>
+                <el-button class="btn" type="danger" @click="resetForm" >Reset</el-button>
             </el-form-item>
         </el-form>
     </div>
