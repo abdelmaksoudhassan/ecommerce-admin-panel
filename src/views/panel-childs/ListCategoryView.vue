@@ -76,12 +76,12 @@ export default {
     })
     io.on('deleteCategory',(id)=>{
       const {title} = this.getCategory(id)
-      this.deleteCetegory(id)
+      this.removeCategory(id)
       this.$message({ message: `(${title}) category deleted`, type: 'error', showClose: true })
     })
   },
   methods:{
-    ...mapActions(useCategoryStore,['getCategory','pushToCategories','deleteCetegory','updateCategory','setCategories']),
+    ...mapActions(useCategoryStore,['getCategory','pushToCategories','removeCategory','updateCategory','setCategories']),
     async confirmEdit(title,id){
       try {
         await this.$axios.authInstance().patch(`/category/${id}`,{title})
