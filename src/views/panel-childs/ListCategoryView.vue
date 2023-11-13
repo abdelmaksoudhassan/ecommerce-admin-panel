@@ -20,10 +20,8 @@
     </el-table-column>
       <el-table-column fixed="right" align="right">
       <template #default="scope">
-        <div>
           <BoxBtn :title="scope.row.title" @confirmBox="confirmEdit($event,scope.row._id)" @cancelBox="cancel"></BoxBtn>
           <ConfirmBtn title="category and its products will be deleted" @confirmEvent="confirmDelete(scope.row._id)" @cancelEvent="cancel"></ConfirmBtn>
-        </div>
       </template>
     </el-table-column>
     </el-table>
