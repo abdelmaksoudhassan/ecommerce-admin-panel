@@ -29,8 +29,8 @@
             Confirm Password And Password Must Be Same
         </Alert>
     <el-form-item>
-        <el-button :loading="loading" :disabled="v$.$invalid||passwordOk" type="primary" @click="submitForm">Add</el-button>
-        <el-button @click="resetForm" type="danger">Reset</el-button>
+        <el-button class="btn" :loading="loading" :disabled="v$.$invalid||passwordOk" type="primary" @click="submitForm">Add</el-button>
+        <el-button class="btn" @click="resetForm" type="danger">Reset</el-button>
     </el-form-item>
     </el-form>
 </template>
