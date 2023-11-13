@@ -1,5 +1,5 @@
 <template>
-    <el-button type="danger" @click="deleteAdmin()" :loading="loading" size="small">
+    <el-button type="danger" @click="deleteAdmin()" :loading="loading" size="small" class="btn">
       {{text}}
     </el-button>
 </template>
