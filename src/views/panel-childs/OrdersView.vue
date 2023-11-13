@@ -9,7 +9,7 @@
                 </div>
             </template>
         </el-table-column>
-        <el-table-column label="Email" >
+        <el-table-column label="Email" width="180">
             <template #default="scope">
                 <div style="display: flex; align-items: center">
                     <el-icon><Message /></el-icon>
