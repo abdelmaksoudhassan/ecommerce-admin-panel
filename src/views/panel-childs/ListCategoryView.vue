@@ -18,7 +18,7 @@
         </div>
       </template>
     </el-table-column>
-      <el-table-column >
+      <el-table-column fixed="right" align="right">
       <template #default="scope">
         <div>
           <BoxBtn :title="scope.row.title" @confirmBox="confirmEdit($event,scope.row._id)" @cancelBox="cancel"></BoxBtn>
