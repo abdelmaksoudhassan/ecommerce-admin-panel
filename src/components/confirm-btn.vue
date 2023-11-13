@@ -8,7 +8,7 @@
     @cancel="$emit('cancelEvent')"
   >
     <template #reference>
-      <el-button type="danger" size="small">Delete</el-button>
+      <el-button type="danger" size="small" class="btn">Delete</el-button>
     </template>
   </el-popconfirm>
 </template>
