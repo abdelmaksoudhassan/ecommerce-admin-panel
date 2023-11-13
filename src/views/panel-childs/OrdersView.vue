@@ -1,7 +1,7 @@
 <template>
     <h1 class="center">Orders Table</h1>
-    <el-table v-loading="loading" :data="orders" >
-        <el-table-column label="Date" prop="createdAt" style="width: 100%">
+    <el-table v-loading="loading" :data="orders" style="width: 100%">
+        <el-table-column label="Date" prop="createdAt" width="180">
             <template #default="createdAt">
                 <div style="display: flex; align-items: center">
                     <el-icon><Clock /></el-icon>
