@@ -1,0 +1,39 @@
+@import './base.css';
+
+.padding_v{
+    padding: 40px 0px 40px 0px;
+}
+.margin_h{
+    margin: 0px 100px 0px 100px;
+}
+@media (max-width:800px) {
+    .margin_h{
+        margin: unset
+    }
+}
+.center{
+    text-align: center;
+}
+.splitter{
+    height: 40px;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.mini-splitter{
+    height: 20px;
+}
+.flex-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
