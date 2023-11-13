@@ -8,7 +8,7 @@
 }
 @media (max-width:800px) {
     .margin_h{
-        margin: unset
+        margin: 10px;
     }
 }
 .center{
