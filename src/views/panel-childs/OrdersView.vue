@@ -57,10 +57,10 @@
 </template>
 <script>
 import {ref} from 'vue'
-import DialogBtn from '../../components/dialogBtn.vue'
-import DeleteBtn from '../../components/delete-btn.vue'
-import { err_Msg } from '../../helpers/functions'
-import {io} from '../../helpers/socket'
+import DialogBtn from '@/components/dialogBtn.vue'
+import DeleteBtn from '@/components/delete-btn.vue'
+import { err_Msg } from '@/helpers/functions'
+import {io} from '@/helpers/socket'
 export default {
     components:{ DialogBtn,DeleteBtn },
     setup(){
@@ -85,15 +85,13 @@ export default {
                 this.orders.unshift(order)
             }
         }),
-        io.on('removeOrder',(order)=>{
-            const {_id} = order
+        io.on('removeOrder',(_id)=>{
             this.orders = this.orders.filter(order=> order._id != _id)
-            this.$message({message: `one order deleted`, type: 'warning', showClose: true })
+            this.$message({message: `one order deleted`, type: 'error', showClose: true })
         }),
         io.on('removeAllOrders',()=>{
             this.orders = []
             this.total=0
-            this.pageSize=3
             this.currentPage =1
             this.$message({message: `all orders removed`, type: 'error', showClose: true })
         })
