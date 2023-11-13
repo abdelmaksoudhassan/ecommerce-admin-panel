@@ -17,9 +17,8 @@
                 </div>
             </template>
         </el-table-column>
-        <el-table-column>
+        <el-table-column fixed="right" align="right">
             <template #default="scope">
-                <div>
                 <DialogBtn title="Order Details">
                     <template #btn-txt>Details</template>
                     <template #dialog-content>
@@ -37,7 +36,6 @@
                     </template>
                 </DialogBtn>
                 <DeleteBtn :id="scope.row._id" url="/order" @deleted="handleDelete($event)"></DeleteBtn>
-            </div>
             </template>
         </el-table-column>
     </el-table>
