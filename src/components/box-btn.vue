@@ -1,5 +1,5 @@
 <template>
-  <el-button class="btn" @click="open" type="primary">Edit</el-button>
+  <el-button size="small" @click="open" type="primary">Edit</el-button>
 </template>
 <script setup>
 import { ElMessageBox } from 'element-plus'
