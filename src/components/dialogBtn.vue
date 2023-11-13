@@ -2,7 +2,7 @@
     <el-button type="info" @click="dialogTableVisible = true" class="btn">
         <slot name="btn-txt"></slot>
   </el-button>
-  <el-dialog :append-to-body="true" v-model="dialogTableVisible" :title="title">
+  <el-dialog :append-to-body="true" :fullscreen="true" v-model="dialogTableVisible" :title="title">
     <slot name="dialog-content"></slot>
   </el-dialog>
   
