@@ -42,8 +42,8 @@
                 Last Name Must Be Only Letters
             </Alert>
             <el-form-item>
-                <el-button :loading="loading" :disabled="v$_name.$invalid" type="success" @click="submitForm">Save</el-button>
-                <el-button @click="resetNameForm" type="warning">Reset</el-button>
+                <el-button class="btn" :loading="loading" :disabled="v$_name.$invalid" type="success" @click="submitForm">Save</el-button>
+                <el-button class="btn" @click="resetNameForm" type="warning">Reset</el-button>
             </el-form-item>
             </el-form>
 
@@ -64,8 +64,8 @@
             </Alert>
 
             <el-form-item>
-                <el-button :loading="ploading"  :disabled="v$_password.$invalid" type="success" @click="submitPassword">save</el-button>
-                <el-button @click="resetPassword"  type="warning">Reset</el-button>
+                <el-button class="btn" :loading="ploading"  :disabled="v$_password.$invalid" type="success" @click="submitPassword">save</el-button>
+                <el-button class="btn" @click="resetPassword"  type="warning">Reset</el-button>
             </el-form-item>
         </el-form>
 </template>
