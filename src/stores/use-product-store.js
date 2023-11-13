@@ -16,21 +16,21 @@ export const useProductStore = defineStore('product',{
         setProducts(data){
             this.products = data
         },
-        removeProduct(id){
+        deleteProduct(id){
             this.products = this.products.filter(product=>product._id != id)
         },
         popProduct(){
             this.products.pop()
         },
-        updateProduct(id,product){
+        editProduct(id,product){
             const index = this.products.findIndex(x=>x._id==id)
             if(index != -1){
                 this.products[index] = product
             }
-        },
-        getProduct(id){
-            const arr = this.products.filter(x=> x._id == id)
-            return arr.length == 0 ? null : arr[0]
         }
+        // getProduct(id){
+        //     const arr = this.products.filter(x=> x._id == id)
+        //     return arr.length == 0 ? null : arr[0]
+        // }
     }
 })
