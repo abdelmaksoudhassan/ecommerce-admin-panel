@@ -241,6 +241,7 @@ methods:{
             this.$notify({ type: 'success', title: 'success', message: 'Product updated' })
             this.loading = false
             this.editProduct(this.id,this.product)
+            this.$router.back()
         }).catch(err=>{
             this.loading = false
             this.$notify({ type: 'error', title: 'Error', message: err_Msg()})
