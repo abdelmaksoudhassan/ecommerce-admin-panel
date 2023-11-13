@@ -28,10 +28,8 @@
     </el-table-column>
     <el-table-column fixed="right" align="right">
       <template #default="scope">
-        <div>
-          <el-button type="primary" size="small" @click="$router.push({name:'edit-product',params:{_id:scope.row._id}})">Edit</el-button>
+          <el-button type="primary" size="small" @click="$router.push({name:'edit-product',params:{_id:scope.row._id}})" class="btn">Edit</el-button>
           <DeleteBtn url="/product" :id="scope.row._id" @deleted="deleteProduct($event)"></DeleteBtn>
-        </div>
         </template>
     </el-table-column>
   </el-table>
