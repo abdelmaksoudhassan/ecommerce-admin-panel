@@ -13,7 +13,7 @@ export const useCategoryStore = defineStore('category',{
         setCategories(data){
             this.categories = data
         },
-        deleteCetegory(id){
+        removeCategory(id){
             this.categories = this.categories.filter(category=>category._id != id)
         },
         updateCategory(id,title){
