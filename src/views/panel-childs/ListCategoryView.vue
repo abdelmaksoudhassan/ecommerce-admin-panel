@@ -72,7 +72,7 @@ export default {
       const {_id,title} = category
       const old = this.getCategory(_id)
       this.$message({ message: `(${old.title}) category updated to (${title})`, type: 'warning', showClose: true })
-      this.editCategory(_id,title)
+      this.updateCategory(_id,title)
     })
     io.on('deleteCategory',(id)=>{
       const {title} = this.getCategory(id)
@@ -81,7 +81,7 @@ export default {
     })
   },
   methods:{
-    ...mapActions(useCategoryStore,['getCategory','pushToCategories','deleteCetegory','editCategory','setCategories']),
+    ...mapActions(useCategoryStore,['getCategory','pushToCategories','deleteCetegory','updateCategory','setCategories']),
     async confirmEdit(title,id){
       try {
         await this.$axios.authInstance().patch(`/category/${id}`,{title})
