@@ -16,7 +16,7 @@
         </div>
       </template>
     </el-table-column>
-    <el-table-column fixed="right">
+    <el-table-column fixed="right" align="right">
       <template #default="scope">
         <DeleteBtn :id="scope.row._id" :url="url" @deleted="filterAdmins($event)"></DeleteBtn>
       </template>
