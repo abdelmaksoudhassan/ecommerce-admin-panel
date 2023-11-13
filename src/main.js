@@ -1,4 +1,3 @@
-import './assets/main.css'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import ElementPlus from 'element-plus'
@@ -11,6 +10,7 @@ import vuelidate from '@vuelidate/core'
 import moment from 'moment'
 import axios from 'axios'
 import { getToken } from './helpers/functions'
+import './assets/main.css'
 
 // to use element icons
 const app = createApp(App)
