@@ -2,3 +2,6 @@
   margin-left: unset;
   margin: 3px;
 }
+.el-button+.el-button{
+  margin-left: unset;
+}
