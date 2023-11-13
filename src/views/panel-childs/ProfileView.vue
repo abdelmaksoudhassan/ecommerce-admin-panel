@@ -70,12 +70,12 @@
         </el-form>
 </template>
 <script>
-import UploadImage from '../../components/upload-image.vue'
-import InputField from '../../components/input-field.vue'
-import Alert from '../../components/alert.vue'
+import UploadImage from '@/components/upload-image.vue'
+import InputField from '@/components/input-field.vue'
+import Alert from '@/components/alert.vue'
 import {ref,reactive} from 'vue'
-import { getToken,err_Msg,clearToken } from '../../helpers/functions'
-import { useAdminStore } from '../../stores/use-admin-store'
+import { getToken,err_Msg,clearToken } from '@/helpers/functions'
+import { useAdminStore } from '@/stores/use-admin-store'
 import { useVuelidate } from '@vuelidate/core'
 import { required,minLength,maxLength,alpha } from '@vuelidate/validators'
 import { mapActions } from 'pinia'
