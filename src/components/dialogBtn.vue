@@ -1,5 +1,5 @@
 <template>
-    <el-button type="info" @click="dialogTableVisible = true" class="btn">
+    <el-button type="info" @click="dialogTableVisible = true" size="small">
         <slot name="btn-txt"></slot>
   </el-button>
   <el-dialog :append-to-body="true" :fullscreen="true" v-model="dialogTableVisible" :title="title">
