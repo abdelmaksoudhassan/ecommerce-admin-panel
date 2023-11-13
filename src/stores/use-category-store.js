@@ -16,7 +16,7 @@ export const useCategoryStore = defineStore('category',{
         deleteCetegory(id){
             this.categories = this.categories.filter(category=>category._id != id)
         },
-        editCategory(id,title){
+        updateCategory(id,title){
             const index = this.categories.findIndex(x=>x._id==id)
             this.categories[index].title = title
         },
