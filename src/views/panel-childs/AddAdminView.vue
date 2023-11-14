@@ -68,6 +68,7 @@ export default {
     methods:{
         submitForm(){
             this.loading = true
+            this.user.email = this.user.email.toLowerCase()
             this.$axios.authInstance().post('/admin/add-admin',{...this.user}).then(response=>{
                 this.loading = false
                 this.resetForm()
