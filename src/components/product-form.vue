@@ -9,7 +9,7 @@
             {{v$.title.maxLength.$message}}
         </Alert>
         <Alert :show="v$.title.letNumSpcUndrscr.$invalid && v$.title.$dirty">
-            Tiitle required and support letters, numbers, spaces or underscore
+            title required and support letters, numbers, spaces or underscore
         </Alert>
 
         <el-form-item label="Price">
