@@ -60,9 +60,11 @@ export default{
             this.loading = true
             this.category.title = this.category.title.toLowerCase()
             try {
-                await this.$axios.authInstance().post('category',{...this.category})
+                const doc = (await this.$axios.authInstance().post('category',{...this.category})).data
+                const {title} = doc
                 this.resetForm()
                 this.loading = false
+                this.$notify({ type: 'success', title: 'success', message: `category with title ${title} added` })
             } catch (err) {
                 this.loading = false
                 this.$notify({ title: 'Error', message: err_Msg(), type: 'error' });
