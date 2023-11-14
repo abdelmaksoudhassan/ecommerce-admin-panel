@@ -82,7 +82,7 @@ export default {
     ...mapActions(useCategoryStore,['getCategory','pushToCategories','removeCategory','updateCategory','setCategories']),
     async confirmEdit(title,id){
       try {
-        await this.$axios.authInstance().patch(`/category/${id}`,{title})
+        await this.$axios.authInstance().patch(`/category/${id}`,{title: title.toLowerCase()})
       } catch (err) {
         const message = (err.response.data.code==11000) ? "Duplicated title" : err_Msg()
         this.$notify({ title: 'Error', message, type: 'error' });
