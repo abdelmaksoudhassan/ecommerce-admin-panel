@@ -70,8 +70,10 @@ export default {
             this.loading = true
             this.user.email = this.user.email.toLowerCase()
             this.$axios.authInstance().post('/admin/add-admin',{...this.user}).then(response=>{
+                const {message} = response.data
                 this.loading = false
                 this.resetForm()
+                this.$notify({ type: 'success', title: 'success', message })
             }).catch(err=>{
                 this.loading = false
                 if(err.response.status == 406){
