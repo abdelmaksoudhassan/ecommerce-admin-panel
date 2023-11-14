@@ -58,6 +58,7 @@ export default{
         },
         async submitForm(){
             this.loading = true
+            this.category.title = this.category.title.toLowerCase()
             try {
                 await this.$axios.authInstance().post('category',{...this.category})
                 this.resetForm()
