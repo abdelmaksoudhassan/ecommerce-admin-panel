@@ -27,7 +27,7 @@ export default{
     setup(){
         const adminStore = useAdminStore()
         const user = reactive({
-            email:'admin@gmail.com',
+            email:'main_admin@gmail.com',
             password:'123456'
         })
         const errMsg = ref(null)
