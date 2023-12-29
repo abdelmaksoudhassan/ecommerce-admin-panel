@@ -1,7 +1,7 @@
 import socket from 'socket.io-client'
 // 'http://localhost:3000'
 // 'https://nodejs-ecommerce-o2e5.onrender.com'
-export const io = socket('https://nodejs-ecommerce-o2e5.onrender.com',{
+export const io = socket('https://node-js-ecommerce.vercel.app',{
     withCredentials: true,
     autoConnect: false
 })
