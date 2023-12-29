@@ -19,7 +19,7 @@ export const useAdminStore = defineStore('admin',{
         },
         imageUrl(state){
             return (state.authenticated&&state.data.image) ?
-             `https://node-js-ecommerce.vercel.app/${state.data.image}` :
+             `https://nodejs-ecommerce-o2e5.onrender.com/${state.data.image}` :
              "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png"
         }
     },
