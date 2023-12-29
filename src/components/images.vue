@@ -14,7 +14,7 @@ defineProps({
       required: true
   }
 })
-const url = ref('https://nodejs-ecommerce-o2e5.onrender.com/')
+const url = ref('https://node-js-ecommerce.vercel.app/')
 </script>
 <style scoped>
 .demo-fit {
