@@ -30,7 +30,7 @@ app.config.globalProperties.$filters = {
 app.config.globalProperties.$axios = {
     instance(){
         return axios.create({
-            baseURL:'https://node-js-ecommerce.vercel.app/',
+            baseURL:'https://nodejs-ecommerce-o2e5.onrender.com/',
             withCredentials: true
         })
     },
